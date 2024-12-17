@@ -15,7 +15,7 @@ export class InvoiceAppComponent  {
       html2canvas(element).then(canvas => {
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/jpeg');
-        link.download = 'updated-image.jpg';
+        link.download = 'updated-invoice-sheet.jpg';
         link.click();
       });
     } else {
