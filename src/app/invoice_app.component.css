@@ -26,10 +26,10 @@
   
   textarea {
     width: 20%; /* Adjust the width as needed */
-    height: 50px;
+    height: 100px;
     margin: 20px auto; /* Center the textarea */
     padding: 10px;
-    font-size: 16px;
+    font-size: 22px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: none;
