@@ -1,15 +1,16 @@
-
-
 <main class="main">
   <div class="content">
-    <!-- <text-box></text-box> -->
-    <div class="container">
-      <div class="image-container">
-        <img src="assets/test_img.png" alt="Background Image" id="backgroundImage">
-        <div class="text-overlay">{{ text }}</div>
+    <div class="responsive-container">
+      <div class="responsive-content">
+        <div class="container">
+          <div class="image-container">
+            <img src="assets/test_img.png" alt="Background Image" id="backgroundImage">
+            <div class="text-overlay">{{ text }}</div>
+          </div>
+          <textarea [(ngModel)]="text" placeholder="Enter text here"></textarea>
+          <button (click)="saveImage()">Save Image</button>
+        </div>
       </div>
-      <textarea [(ngModel)]="text" placeholder="Enter text here"></textarea>
-      <button (click)="saveImage()">Save Image</button>
-    </div>    
+    </div>
   </div>
 </main>
