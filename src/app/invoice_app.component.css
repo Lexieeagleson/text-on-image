@@ -1,0 +1,55 @@
+.container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #backgroundImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-overlay {
+    position: fixed;
+    /* how you move the text on the screen */
+    top: 26%;
+    left: 30%;
+    /*  */
+    color: black;
+    font-size: 24px;
+    white-space: pre-wrap; /* This will preserve line breaks and whitespace */
+  }
+  
+  textarea {
+    width: 20%; /* Adjust the width as needed */
+    height: 50px;
+    margin: 20px auto; /* Center the textarea */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    display: block; /* Ensure it behaves like a block element */
+    text-align: center;
+  }
+
+  
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
