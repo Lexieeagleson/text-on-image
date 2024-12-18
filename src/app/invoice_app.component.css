@@ -7,8 +7,8 @@
 }
 
 .responsive-content {
-  width: 90%; /* Increased initial width */
-  height: 90%; /* Increased initial height */
+  width: 80%; /* Increased initial width */
+  height: 80%; /* Increased initial height */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,7 @@
     position: absolute;
     /* how you move the text on the screen */
     top: 23%;
-    left: 20%;
+    left: 23%;
     /*  */
     color: black;
     font-size: 24px;
@@ -42,7 +42,7 @@
   }
   
   textarea {
-    width: 30%; /* Adjust the width as needed */
+    width: 50%; /* Adjust the width as needed */
     height: 100px;
     margin: 20px auto; /* Center the textarea */
     padding: 10px;
