@@ -3,10 +3,11 @@ import html2canvas from 'html2canvas';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './invoice_app.component.html',
-  styleUrl: './invoice_app.component.css'
+  templateUrl: './text_on_image.component.html',
+  styleUrl: './text_on_image.component.css'
 })
-export class InvoiceAppComponent  {
+export class TextOnImageComponent  {
+  title = 'textOnImage'
   text: string = '';
 
   saveImage() {

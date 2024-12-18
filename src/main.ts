@@ -1,8 +1,8 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { InvoiceAppModule } from './app/invoice_app.module';
+import { TextOnImageModule } from './app/text_on_image.module';
 
-platformBrowserDynamic().bootstrapModule(InvoiceAppModule, {
+platformBrowserDynamic().bootstrapModule(TextOnImageModule, {
   ngZoneEventCoalescing: true
 })
   .catch(err => console.error(err));
