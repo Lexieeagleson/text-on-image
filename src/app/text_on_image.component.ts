@@ -8,7 +8,16 @@ import html2canvas from 'html2canvas';
 })
 export class TextOnImageComponent  {
   title = 'textOnImage'
-  text: string = '';
+  billTo: string = '';
+  date: string = '';
+  invoiceNo: string = '';
+  poBox: string = '';
+  project: string = '';
+  quantity: string = '';
+  description: string = '';
+  rate: string = '';
+  amount: string = '';
+  total: string = '';
 
   saveImage() {
     const element = document.querySelector('.image-container') as HTMLElement;

@@ -5,10 +5,30 @@
         <div class="container">
           <div class="image-container">
             <img src="assets/blank_invoice.png" alt="Background Image" id="backgroundImage">
-            <div class="text-overlay">{{ text }}</div>
+            <div class="text-overlay billTo">{{ billTo }}</div>
+            <div class="text-overlay date">{{ date }}</div>
+            <div class="text-overlay invoiceNo">{{ invoiceNo }}</div>
+            <div class="text-overlay poBox">{{ poBox }}</div>
+            <div class="text-overlay project">{{ project }}</div>
+            <div class="text-overlay quantity">{{ quantity }}</div>
+            <div class="text-overlay description">{{ description }}</div>
+            <div class="text-overlay rate">{{ rate }}</div>
+            <div class="text-overlay amount">{{ amount }}</div>
+            <div class="text-overlay total">{{ total }}</div>
           </div>
-          <textarea [(ngModel)]="text" placeholder="Enter text here"></textarea>
-          <button (click)="saveImage()">Save Image</button>
+          <div class="form-container">
+            <textarea class="textarea-big" [(ngModel)]="billTo" placeholder="Enter bill to address"></textarea>
+            <textarea class="textarea-small" [(ngModel)]="date" placeholder="Enter date"></textarea>
+            <textarea class="textarea-small" [(ngModel)]="invoiceNo" placeholder="Enter invoice number"></textarea>
+            <textarea class="textarea-small" [(ngModel)]="poBox" placeholder="Enter poBox number"></textarea>
+            <textarea class="textarea-small" [(ngModel)]="project" placeholder="Enter project number"></textarea>
+            <textarea class="textarea-small" [(ngModel)]="quantity" placeholder="Enter quantity"></textarea>
+            <textarea class="textarea-big" [(ngModel)]="description" placeholder="Enter description"></textarea>
+            <textarea class="textarea-small" [(ngModel)]="rate" placeholder="Enter rate"></textarea>
+            <textarea class="textarea-small" [(ngModel)]="amount" placeholder="Enter amount"></textarea>
+            <textarea class="textarea-small" [(ngModel)]="total" placeholder="Enter totalr"></textarea>
+            <button (click)="saveImage()">Save Image</button>
+          </div>
         </div>
       </div>
     </div>

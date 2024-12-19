@@ -18,6 +18,8 @@
 .container {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
   }
   
   .image-container {
@@ -30,22 +32,11 @@
     height: auto;
   }
   
-  .text-overlay {
-    position: absolute;
-    /* how you move the text on the screen */
-    top: 23%;
-    left: 23%;
-    /*  */
-    color: black;
-    font-size: 24px;
-    white-space: pre-wrap; /* This will preserve line breaks and whitespace */
+  .form-container {
+    background-color: aquamarine;
   }
   
   textarea {
-    width: 50%; /* Adjust the width as needed */
-    height: 100px;
-    margin: 20px auto; /* Center the textarea */
-    padding: 10px;
     font-size: 22px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -54,8 +45,89 @@
     text-align: center;
   }
 
-  
-  
+  .textarea-big {
+    background-color: red;
+    width: 50%; /* Adjust the width as needed */
+    height: 100px;
+    margin: 20px auto; /* Center the textarea */
+    padding: 10px;
+  }
+
+  .textarea-small {
+    width: 20%; /* Adjust the width as needed */
+    height: 50px;
+    margin: 20px auto; /* Center the textarea */
+    padding: 10px;
+    background-color: peru;
+  }
+
+  .text-overlay {
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    white-space: pre-wrap; /* This will preserve line breaks and whitespace */
+  }
+
+  .billTo {
+    top: 50%;
+    left: 23%;
+    background-color: yellow;
+  }
+
+  .date {
+    top: 23%;
+    left: 23%;
+    background-color: pink;
+  }
+
+  .invoiceNo {
+    top: 23%;
+    left: 33%;
+    background-color: rgb(45, 207, 196);
+  }
+
+  .poBox {
+    top: 33%;
+    left: 23%;
+    background-color: pink;
+  }
+
+  .project {
+    top: 43%;
+    left: 23%;
+    background-color: rgb(143, 99, 105);
+  }
+
+  .quantity {
+    top: 53%;
+    left: 23%;
+    background-color: rgb(167, 27, 50);
+  }
+
+  .description {
+    top: 63%;
+    left: 23%;
+    background-color: rgb(91, 143, 99);
+  }
+
+  .rate {
+    top: 73%;
+    left: 23%;
+    background-color: rgb(133, 146, 212);
+  }
+
+  .amount {
+    top: 83%;
+    left: 23%;
+    background-color: rgb(49, 107, 140);
+  }
+
+  .total {
+    top: 93%;
+    left: 23%;
+    background-color: rgb(234, 69, 130);
+  }
+
 button {
     /* margin-top: 20px; */
     padding: 10px 20px;
