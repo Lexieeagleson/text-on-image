@@ -1,145 +1,132 @@
-.responsive-container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.responsive-content {
-  width: 80%; /* Increased initial width */
-  height: 80%; /* Increased initial height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw; /* Responsive font size */
-}
-
 .container {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .image-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  #backgroundImage {
-    width: 100%;
-    height: auto;
-  }
-  
-  .form-container {
-    background-color: aquamarine;
-  }
-  
-  textarea {
-    font-size: 22px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: none;
-    display: block; /* Ensure it behaves like a block element */
-    text-align: center;
-  }
+  /* text-align: center; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
 
-  .textarea-big {
-    background-color: red;
-    width: 50%; /* Adjust the width as needed */
-    height: 100px;
-    margin: 20px auto; /* Center the textarea */
-    padding: 10px;
-  }
+.image-container {
+  background-color: lightpink;
+  margin-right: 300px;
+}
 
-  .textarea-small {
-    width: 20%; /* Adjust the width as needed */
-    height: 50px;
-    margin: 20px auto; /* Center the textarea */
-    padding: 10px;
-    background-color: peru;
-  }
+#backgroundImage {
+  background-color: lavender;
+  display: flex;
+  padding: 50px;
+  height: 100%;
+}
 
-  .text-overlay {
-    position: absolute;
-    color: black;
-    font-size: 24px;
-    white-space: pre-wrap; /* This will preserve line breaks and whitespace */
-  }
+.form-container {
+  background-color: aquamarine;
+  width: 38%;
+}
 
-  .billTo {
-    top: 50%;
-    left: 23%;
-    background-color: yellow;
-  }
+textarea {
+  font-size: 22px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  display: block;
+  text-align: center;
+}
 
-  .date {
-    top: 23%;
-    left: 23%;
-    background-color: pink;
-  }
+.textarea-big {
+  background-color: rgb(254, 216, 202);
+  width: 50%;
+  height: 100px;
+  margin: 20px auto;
+  padding: 10px;
+}
 
-  .invoiceNo {
-    top: 23%;
-    left: 33%;
-    background-color: rgb(45, 207, 196);
-  }
+.textarea-small {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: rgb(107, 250, 243);
+}
 
-  .poBox {
-    top: 33%;
-    left: 23%;
-    background-color: pink;
-  }
+.text-overlay {
+  color: black;
+  font-size: 24px;
+  white-space: pre-wrap;
+  position: relative;
+  word-wrap: break-word;
+}
 
-  .project {
-    top: 43%;
-    left: 23%;
-    background-color: rgb(143, 99, 105);
-  }
+.billTo {
+  top: -880px;
+  left: 170px;
+  width: 400px;
+  background-color: yellow;
+}
 
-  .quantity {
-    top: 53%;
-    left: 23%;
-    background-color: rgb(167, 27, 50);
-  }
+.date {
+  top: -1055px;
+  left: 450px;
+  width: 200px;
+  background-color: pink;
+}
 
-  .description {
-    top: 63%;
-    left: 23%;
-    background-color: rgb(91, 143, 99);
-  }
+.invoiceNo {
+  top: 23%;
+  left: 33%;
+  background-color: rgb(45, 207, 196);
+}
 
-  .rate {
-    top: 73%;
-    left: 23%;
-    background-color: rgb(133, 146, 212);
-  }
+.poBox {
+  top: 33%;
+  left: 23%;
+  background-color: pink;
+}
 
-  .amount {
-    top: 83%;
-    left: 23%;
-    background-color: rgb(49, 107, 140);
-  }
+.project {
+  top: 43%;
+  left: 23%;
+  background-color: rgb(143, 99, 105);
+}
 
-  .total {
-    top: 93%;
-    left: 23%;
-    background-color: rgb(234, 69, 130);
-  }
+.quantity {
+  top: 53%;
+  left: 23%;
+  background-color: rgb(167, 27, 50);
+}
+
+.description {
+  top: 63%;
+  left: 23%;
+  background-color: rgb(91, 143, 99);
+}
+
+.rate {
+  top: 73%;
+  left: 23%;
+  background-color: rgb(133, 146, 212);
+}
+
+.amount {
+  top: 83%;
+  left: 23%;
+  background-color: rgb(49, 107, 140);
+}
+
+.total {
+  top: 93%;
+  left: 23%;
+  background-color: rgb(234, 69, 130);
+}
 
 button {
-    /* margin-top: 20px; */
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+  /* margin-top: 20px; */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

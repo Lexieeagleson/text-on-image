@@ -6,7 +6,7 @@ import html2canvas from 'html2canvas';
   templateUrl: './text_on_image.component.html',
   styleUrl: './text_on_image.component.css'
 })
-export class TextOnImageComponent  {
+export class TextOnImageComponent {
   title = 'textOnImage'
   billTo: string = '';
   date: string = '';
