@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TextOnImageRoutingModule } from './text_on_image-routing.module';
 import { TextOnImageComponent } from './text_on_image.component';
 import { FormsModule } from '@angular/forms';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { FormsModule } from '@angular/forms';
     TextOnImageRoutingModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [TextOnImageComponent]
 })
 export class TextOnImageModule { }

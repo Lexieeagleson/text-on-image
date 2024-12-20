@@ -1,16 +1,35 @@
 <main class="main">
   <div class="content">
-    <div class="responsive-container">
-      <div class="responsive-content">
-        <div class="container">
-          <div class="image-container">
-            <img src="assets/blank_invoice.png" alt="Background Image" id="backgroundImage">
-            <div class="text-overlay">{{ text }}</div>
-          </div>
-          <textarea [(ngModel)]="text" placeholder="Enter text here"></textarea>
-          <button (click)="saveImage()">Save Image</button>
-        </div>
+    <div class="container">
+      <div class="image-container">
+        <img class="full-image" src="assets/blank_invoice.png" alt="Background Image" id="backgroundImage">
+        <div class="text-overlay billTo">{{ billTo }}</div>
+        <div class="text-overlay date">{{ date }}</div>
+        <div class="text-overlay invoiceNo">{{ invoiceNo }}</div>
+        <div class="text-overlay poBox">{{ poBox }}</div>
+        <div class="text-overlay project">{{ project }}</div>
+        <div class="text-overlay quantity">{{ quantity }}</div>
+        <div class="text-overlay description">{{ description }}</div>
+        <div class="text-overlay rate">{{ rate }}</div>
+        <div class="text-overlay amount">{{ amount }}</div>
+        <div class="text-overlay total">{{ total }}</div>
       </div>
+      <div class="form-container">
+        <textarea class="textarea-big" maxLength="150" [(ngModel)]="billTo" placeholder="Enter bill to address"></textarea>
+        <textarea class="textarea-small" maxLength="12" [(ngModel)]="date" placeholder="Enter date"></textarea>
+        <textarea class="textarea-small" maxLength="12" [(ngModel)]="invoiceNo" placeholder="Enter invoice number"></textarea>
+        <textarea class="textarea-small" maxLength="12" [(ngModel)]="poBox" placeholder="Enter P.O Box"></textarea>
+        <textarea class="textarea-small" maxLength="12" [(ngModel)]="project" placeholder="Enter project number"></textarea>
+        <textarea class="textarea-small" maxLength="130" [(ngModel)]="quantity" placeholder="Enter quantity"></textarea>
+        <textarea class="textarea-big" maxLength="250" [(ngModel)]="description" placeholder="Enter description"></textarea>
+        <textarea class="textarea-small" maxLength="150" [(ngModel)]="rate" placeholder="Enter rate"></textarea>
+        <textarea class="textarea-small" maxLength="150" [(ngModel)]="amount" placeholder="Enter amount"></textarea>
+        <textarea class="textarea-small" maxLength="40" [(ngModel)]="total" placeholder="Enter total"></textarea>
+      </div>
+    </div>
+    <div class="center-button">
+      <button (click)="saveImage()">Save Image</button>
+      <button class= "second-button" (click)="resetForm()">Clear Form</button>
     </div>
   </div>
 </main>
