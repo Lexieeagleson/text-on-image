@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import html2canvas from 'html2canvas';
 
@@ -7,7 +8,7 @@ import html2canvas from 'html2canvas';
   styleUrl: './text_on_image.component.css'
 })
 export class TextOnImageComponent {
-  title = 'textOnImage'
+  title = 'Blank Invoice'
   billTo: string = '';
   date: string = '';
   invoiceNo: string = '';
@@ -19,17 +20,48 @@ export class TextOnImageComponent {
   amount: string = '';
   total: string = '';
 
-  saveImage() {
+  constructor(private datePipe: DatePipe) {}
+
+  saveImage(): void {
+    
     const element = document.querySelector('.image-container') as HTMLElement;
     if (element) {
       html2canvas(element).then(canvas => {
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/jpeg');
-        link.download = 'updated-invoice-sheet.jpg';
+        let imageName = this.getImageName();
+        link.download = imageName;
         link.click();
       });
     } else {
       console.error('Element not found');
     }
+  }
+
+  getImageName(): string {
+    let imageName = 'zeke_transport_invoice';
+    const currentDate = new Date();
+    let formattedDate = this.datePipe.transform(currentDate, 'MMddyyyy');
+
+    if (!!this.billTo) {
+      imageName = this.billTo.replace(/\s+/g, '');
+    }
+    if(!!formattedDate) {
+      imageName = imageName + '_' + formattedDate;
+    }
+    return imageName;
+  }
+
+  resetForm(): void {
+    this.billTo = '';
+    this.amount = '';
+    this.date = '';
+    this.invoiceNo = '';
+    this.poBox = '';
+    this.project = '';
+    this.description = '';
+    this.rate = '';
+    this.quantity = '';
+    this.amount = '';
   }
 }

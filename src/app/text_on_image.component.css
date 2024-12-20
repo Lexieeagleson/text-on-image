@@ -1,24 +1,37 @@
+@media (max-width: 1900px) {
+  .container {
+    min-width: 1600px;
+  }
+
+  .image-container {
+    min-width: 500px;
+  }
+}
+
 .container {
   margin-top: 20px;
+  margin-left: 250px;
   display: flex;
-  justify-content: center;
 }
 
 .image-container {
-  background-color: lightpink;
-  margin-right: 300px;
+  width: 55%;
+}
+
+.image-with-text {
+  position: relative;
 }
 
 #backgroundImage {
-  background-color: lavender;
   display: flex;
   padding: 50px;
   height: 100%;
 }
 
 .form-container {
-  background-color: aquamarine;
+  background-color: #eef7ff;
   width: 38%;
+  min-width: 10%;
 }
 
 textarea {
@@ -31,8 +44,6 @@ textarea {
 }
 
 .textarea-big {
-  background-color: rgb(254, 216, 202);
-  width: 50%;
   height: 100px;
   margin: 20px auto;
   padding: 10px;
@@ -41,7 +52,6 @@ textarea {
 .textarea-small {
   margin: 20px auto;
   padding: 10px;
-  background-color: rgb(107, 250, 243);
 }
 
 .text-overlay {
@@ -53,80 +63,76 @@ textarea {
 }
 
 .billTo {
-  top: 350px;
-  left: 150px;
-  /* top: -880px; */
-  /* left: 150px; */
-  width: 400px;
-  max-height: 300px;
-  resize: vertical;
-  background-color: yellow;
+  top: 320px;
+  left: 385px;
+  max-width: 400px;
 }
 
 .date {
-  top: 170px;
-  left: 750px;
-  /* top: -1060px;
-  left: 475px; */
-  width: 150px;
-  background-color: pink;
+  top: 177px;
+  left: 705px;
+  max-width: 150px;
 }
 
 .invoiceNo {
-  top: 170px;
-  left: 950px;
-  width: 150px;
-  background-color: rgb(45, 207, 196);
+  top: 177px;
+  left: 910px;
+  max-width: 150px;
 }
 
 .poBox {
-  top: 550px;
-  left: 750px;
-  width: 150px;
-  background-color: pink;
+  top: 525px;
+  left: 725px;
+  max-width: 150px;
 }
 
 .project {
-  top: -710;
-  left: 670px;
-  width: 150px;
-  background-color: rgb(143, 99, 105);
+  top: 525px;
+  left: 900px;
+  max-width: 150px;
 }
 
 .quantity {
-  top: 53%;
-  left: 23%;
-  background-color: rgb(167, 27, 50);
+  top: 620px;
+  left: 390px;
+  max-width: 110px;
+  background-color: coral;
 }
 
 .description {
-  top: 63%;
-  left: 23%;
-  background-color: rgb(91, 143, 99);
+  top: 620px;
+  left: 525px;
+  max-width: 200px;
 }
 
 .rate {
-  top: 73%;
-  left: 23%;
-  background-color: rgb(133, 146, 212);
+  top: 620px;
+  left: 760px;
+  max-width: 150px;
 }
 
 .amount {
-  top: 83%;
-  left: 23%;
-  background-color: rgb(49, 107, 140);
+  top: 620px;
+  left: 925px;
+  max-width: 140px;
 }
 
 .total {
-  top: 93%;
-  left: 23%;
-  background-color: rgb(234, 69, 130);
+  top: 1020px;
+  left: 860px;
+  max-width: 210px;
 }
 
-button {
-  /* margin-top: 20px; */
-  padding: 10px 20px;
-  font-size: 16px;
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.center-button button {
+  padding: 20px 40px;
+  font-size: 24px;
   color: #fff;
   background-color: #007bff;
   border: none;
@@ -135,6 +141,13 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.center-button button:hover {
   background-color: #0056b3;
+}
+
+.second-button {
+  margin-left: 200px;
+  border: 2px solid #007bff !important;
+  background-color: white !important;
+  color: #007bff !important;
 }
