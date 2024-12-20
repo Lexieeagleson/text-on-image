@@ -63,5 +63,6 @@ export class TextOnImageComponent {
     this.rate = '';
     this.quantity = '';
     this.amount = '';
+    this.total = '';
   }
 }
